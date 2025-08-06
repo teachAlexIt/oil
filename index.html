@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отжим масла - Масла холодного отжима</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-seedling"></i>
+                    <span>Отжим масла</span>
+                </div>
+                <nav class="nav">
+                    <a href="#about" class="nav-link">О методе</a>
+                    <a href="#oils" class="nav-link">Виды масел</a>
+                    <a href="#benefits" class="nav-link">Польза</a>
+                    <a href="#calculator" class="nav-link">Калькулятор цены</a>
+                </nav>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Натуральные масла холодного отжима</h1>
+                <p>Сохраняем все полезные свойства и витамины для вашего здоровья</p>
+                <a href="#calculator" class="cta-button">Рассчитать стоимость</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Method Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Как получают масла холодным способом</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Холодный отжим — это традиционный способ получения растительных масел, при котором семена прессуются при температуре не выше 40°C. Этот метод позволяет сохранить все природные витамины, минералы и полезные жирные кислоты, которые разрушаются при нагревании.</p>
+                    <p>В отличие от горячего отжима, где семена нагреваются до 120-200°C, холодный способ исключает термическую обработку. Это означает, что масло не теряет своих целебных свойств и имеет более насыщенный вкус и аромат.</p>
+                    <p>Наш пресс работает на низких оборотах, что обеспечивает медленное и бережное извлечение масла без окисления и потери питательных веществ.</p>
+                </div>
+                <div class="about-image">
+                    
+                    <div class="image-placeholder">
+                        <img src="images/press.jpg" alt="Пресс холодного отжима">
+                        <!-- <i class="fas fa-cogs"></i>
+                        <span>Пресс холодного отжима</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="section benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Почему стоит выбирать холодный отжим</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Богатство витаминов</h3>
+                    <p>Сохранение витаминов A, E, D и группы B в полном объеме</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Антиоксиданты</h3>
+                    <p>Высокое содержание природных антиоксидантов для защиты клеток</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Полезные жиры</h3>
+                    <p>Омега-3, Омега-6 и Омега-9 кислоты в оптимальном соотношении</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Натуральность</h3>
+                    <p>100% натуральный продукт без химических добавок и консервантов</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Чистота</h3>
+                    <p>Отсутствие примесей и химических веществ</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Свежесть</h3>
+                    <p>Отжим по заказу обеспечивает максимальную свежесть продукта</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oils Section -->
+    <section id="oils" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Наш ассортимент</h2>
+            </div>
+            <div class="oils-grid" id="oils-grid">
+                <!-- Карточки масел будут добавлены динамически из базы данных -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="section calculator-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Рассчитайте стоимость</h2>
+            </div>
+            <div class="calculator-container">
+                <form class="calculator-form">
+                    <div class="form-group">
+                        <label>Выберите масло</label>
+                        <div class="custom-select" id="oil-type-select">
+                            <div class="select-header">
+                                <span class="select-placeholder">Выберите тип масла</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="select-options" id="oil-options">
+                                <!-- Опции будут добавлены динамически из базы данных -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Объём</label>
+                        <div class="custom-select" id="volume-select">
+                            <div class="select-header">
+                                <span class="select-placeholder">Выберите объём</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="select-options" id="volume-options">
+                                <!-- Опции будут добавлены динамически из базы данных -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="bottle" name="bottle">
+                            <span class="checkmark"></span>
+                            <span>Нужна бутылочка (+50 ₽)</span>
+                        </label>
+                    </div>
+                </form>
+                <div class="calculator-result">
+                    <div class="result-text">
+                        <span id="total-price">Итоговая стоимость: 0 ₽</span>
+                    </div>
+                    <div class="warning" id="warning" style="display: none;">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>Будьте готовы принести собственную упаковку</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> <a href="tel:+79511601931" class="contact-link">+7 (951) 160-19-31</a></p>
+                        <!-- <p><i class="fas fa-envelope"></i> <a href="mailto:info@otzhim-masla.ru" class="contact-link">info@otzhim-masla.ru</a></p> -->
+                        <p><i class="fas fa-map-marker-alt"></i> <a href="https://yandex.ru/maps/-/CHdgqCPM" target="_blank" class="contact-link">Черниговская улица, 11</a></p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <!-- <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a> -->
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Режим работы</h3>
+                    <div class="working-hours">
+                        <p>Пн-Пт: 9:00 - 18:00</p>
+                        <p>Сб: 10:00 - 16:00</p>
+                        <p>Вс: Выходной</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Отжим масла. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="database.js"></script>
+    <script src="script.js"></script>
+    <script src="examples.js"></script>
+</body>
+</html> 
