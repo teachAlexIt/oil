@@ -464,7 +464,7 @@ function createOilCards() {
 
         oilCard.innerHTML = `
             <div class="oil-image">
-                <img src="./images/${oil.type.toLowerCase()}.jpg" alt="${oil.name}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <img src="./images/${oil.type}.jpg" alt="${oil.name}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="image-placeholder" style="display: none;">
                     <i class="${oil.icon}"></i>
                     <span>${oil.name}</span>
